@@ -1,0 +1,47 @@
+.detail__container {
+    position: relative;
+    display: block;
+    top: 70px;
+    padding: 0 calc(3.5vw + 5px);
+  }
+  .detail__container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%; 
+  
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4),
+      transparent
+    );
+    backdrop-filter: blur(1px); 
+  }
+  
+  .detail__img {
+    width: 100%; 
+    object-fit: cover; 
+  }
+  
+  .detail__description {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    color: white;
+    padding: 0 40px 70px 40px;
+    z-index: 1; 
+    max-width: 70%;
+  }
+  .detail__additional-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #ddd;
+    display: flex;
+    gap: 20px;
+  }
+  .vote_average {
+    color: yellow;
+  }
